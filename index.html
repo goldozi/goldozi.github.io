@@ -1,0 +1,390 @@
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گلدوزی نفیسه - آموزش گلدوزی سنتی و مدرن</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h2>گلدوزی <span>نفیسه</span></h2>
+                </div>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">دوره‌ها</a></li>
+                        <li><a href="#">نمونه کارها</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-cta">
+                    <button class="cta-button">شروع یادگیری</button>
+                </div>
+
+                <button class="mobile-toggle" id="mobileToggle" aria-label="منوی موبایل">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- منوی موبایل -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-header">
+                    <div class="mobile-menu-logo">
+                        <h2>گلدوزی <span>نفیسه</span></h2>
+                    </div>
+                    <button class="mobile-menu-close" id="mobileMenuClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="mobile-menu-content">
+                    <a href="#"><i class="fas fa-home"></i> خانه</a>
+                    <a href="#"><i class="fas fa-book"></i> دوره‌ها</a>
+                    <a href="#"><i class="fas fa-images"></i> نمونه کارها</a>
+                    <a href="#"><i class="fas fa-info-circle"></i> درباره ما</a>
+                    <a href="#"><i class="fas fa-phone"></i> تماس با ما</a>
+                    <a href="#"><i class="fas fa-graduation-cap"></i> شروع یادگیری</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- overlay برای بستن منو با کلیک خارج از آن -->
+        <div class="overlay" id="overlay"></div>
+    </header>
+
+    <div class="container">
+        <!-- بخش استوری‌های اینستاگرام -->
+        <section class="stories-section">
+            <!-- <h2 class="stories-title">استوری‌های اینستاگرام</h2> -->
+            <div class="stories-container">
+                <div class="story-item" data-story="1">
+                    <div class="story-avatar">
+                        <div class="story-avatar-inner">
+                            <img src="logo-hero.jpg" alt="آموزش گلدوزی">
+                        </div>
+                    </div>
+                    <p class="story-title">آموزش</p>
+                </div>
+                
+                <div class="story-item" data-story="2">
+                    <div class="story-avatar">
+                        <div class="story-avatar-inner">
+                            <img src="logo-hero.jpg" alt="طرح‌های جدید">
+                        </div>
+                    </div>
+                    <p class="story-title">طرح‌ها</p>
+                </div>
+                
+                <!-- <div class="story-item" data-story="3">
+                    <div class="story-avatar">
+                        <div class="story-avatar-inner">
+                            <img src="logo-hero.jpg" alt="تکنیک‌ها">
+                        </div>
+                    </div>
+                    <p class="story-title">تکنیک‌ها</p>
+                </div> -->
+                
+                <div class="story-item" data-story="4">
+                    <div class="story-avatar">
+                        <div class="story-avatar-inner">
+                            <img src="logo-hero.jpg" alt="ابزارها">
+                        </div>
+                    </div>
+                    <p class="story-title">ابزارها</p>
+                </div>
+                
+                <div class="story-item" data-story="5">
+                    <div class="story-avatar">
+                        <div class="story-avatar-inner">
+                            <img src="logo-hero.jpg" alt="نمونه کارها">
+                        </div>
+                    </div>
+                    <p class="story-title">نمونه‌ها</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <!-- پاپ‌آپ نمایش استوری -->
+    <div class="story-viewer">
+        <div class="story-content">
+            <span class="close-btn">&times;</span>
+            <div class="progress-bars"></div>
+            
+            <div class="media-container">
+                <!-- تصاویر و ویدیوها اینجا نمایش داده می‌شوند -->
+            </div>
+            
+            <div class="navigation next"></div>
+            <div class="navigation prev"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="hero">
+            <div class="embroidery-frame">
+                <img src="logo-hero.jpg" alt="گلدوزی نفیسه">
+            </div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">هنر گلدوزی <span>نفیسه</span></h1>
+                <p class="hero-subtitle">یادگیری هنر اصیل گلدوزی با جدیدترین متدهای آموزشی</p>
+                <a href="#" class="cta-button">همین حالا شروع کنید</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="courses-section">
+            <h2 class="section-title">دوره‌های <span>آموزشی</span></h2>
+            
+            <div class="courses-tabs">
+                <button class="tab-button active" data-tab="free-courses">دوره‌های رایگان</button>
+                <button class="tab-button" data-tab="paid-courses">دوره‌های پیشرفته</button>
+            </div>
+            
+            <div class="tab-content active" id="free-courses">
+                <div class="courses-container">
+                    <!-- دوره رایگان 1 -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="logo-hero.jpg" alt="آموزش گلدوزی مقدماتی">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">آموزش گلدوزی مقدماتی</h3>
+                            <p class="course-description">آشنایی با اصول اولیه گلدوزی، ابزار مورد نیاز و تکنیک‌های ساده</p>
+                            <div class="course-meta">
+                                <span class="course-price free">رایگان</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> ۴ ساعت</span>
+                            </div>
+                            <a href="#" class="cta-button" style="margin-top: 15px; width: 100%; text-align: center;">شرکت در دوره</a>
+                        </div>
+                    </div>
+                    
+                    <!-- دوره رایگان 2 -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="logo-hero.jpg" alt="گلدوزی روی لباس">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">گلدوزی روی لباس</h3>
+                            <p class="course-description">یادگیری تکنیک‌های گلدوزی روی پارچه و لباس‌های مختلف</p>
+                            <div class="course-meta">
+                                <span class="course-price free">رایگان</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> ۳ ساعت</span>
+                            </div>
+                            <a href="#" class="cta-button" style="margin-top: 15px; width: 100%; text-align: center;">شرکت در دوره</a>
+                        </div>
+                    </div>
+                    
+                    <!-- دوره رایگان 3 -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="logo-hero.jpg" alt="گلدوزی سنتی">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">گلدوزی سنتی</h3>
+                            <p class="course-description">آشنایی با نقوش و طرح‌های سنتی در هنر گلدوزی ایرانی</p>
+                            <div class="course-meta">
+                                <span class="course-price free">رایگان</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> ۵ ساعت</span>
+                            </div>
+                            <a href="#" class="cta-button" style="margin-top: 15px; width: 100%; text-align: center;">شرکت در دوره</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="paid-courses">
+                <div class="courses-container">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="logo-hero.jpg" alt="گلدوزی پیشرفته">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">گلدوزی پیشرفته</h3>
+                            <p class="course-description">آموزش تکنیک‌های پیشرفته گلدوزی و ایجاد آثار هنری پیچیده</p>
+                            <div class="course-meta">
+                                <span class="course-price">۲۹۰,۰۰۰ تومان</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> ۱۲ ساعت</span>
+                            </div>
+                            <a href="#" class="cta-button" style="margin-top: 15px; width: 100%; text-align: center;">خرید دوره</a>
+                        </div>
+                    </div>
+                    
+                    <!-- دوره پولی 2 -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="logo-hero.jpg" alt="گلدوزی سه بعدی">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">گلدوزی سه بعدی</h3>
+                            <p class="course-description">یادگیری تکنیک‌های گلدوزی سه بعدی برای ایجاد آثار منحصر به فرد</p>
+                            <div class="course-meta">
+                                <span class="course-price">۳۵۰,۰۰۰ تومان</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> ۱۰ ساعت</span>
+                            </div>
+                            <a href="#" class="cta-button" style="margin-top: 15px; width: 100%; text-align: center;">خرید دوره</a>
+                        </div>
+                    </div>
+                    
+                    <!-- دوره پولی 3 -->
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="logo-hero.jpg" alt="طراحی نقشه گلدوزی">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">طراحی نقشه گلدوزی</h3>
+                            <p class="course-description">آموزش طراحی نقشه‌های اختصاصی برای گلدوزی و انتقال آن‌ها روی پارچه</p>
+                            <div class="course-meta">
+                                <span class="course-price">۴۲۰,۰۰۰ تومان</span>
+                                <span class="course-duration"><i class="far fa-clock"></i> ۱۵ ساعت</span>
+                            </div>
+                            <a href="#" class="cta-button" style="margin-top: 15px; width: 100%; text-align: center;">خرید دوره</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">نظرات هنرجویان</h2>
+            
+            <div class="testimonials-container">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <!-- نظرات به صورت داینامیک توسط جاوااسکریپت اضافه خواهند شد -->
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn" id="prevBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="testimonial-btn" id="nextBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="gallery-section">
+            <h2 class="gallery-title">گالری آثار <span>نفیسه</span></h2>
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item"><div class="skeleton"></div><img src="" alt="اثر گلدوزی"></div>
+                <div class="gallery-item"><div class="skeleton"></div><img src="" alt="اثر گلدوزی"></div>
+                <div class="gallery-item"><div class="skeleton"></div><img src="" alt="اثر گلدوزی"></div>
+                <div class="gallery-item"><div class="skeleton"></div><img src="" alt="اثر گلدوزی"></div>
+                <div class="gallery-item"><div class="skeleton"></div><img src="" alt="اثر گلدوزی"></div>
+                <div class="gallery-item"><div class="skeleton"></div><img src="" alt="اثر گلدوزی"></div>
+            </div>
+        </section>
+    </div>
+
+    <div style="padding: 0 1rem;">
+        <div class="service-cta container">
+            <img src="Eitaa.png" alt="لوگو ایتا">
+            <div class="cta-content">
+                <h3>به کانال ایتا ما بپیوندید!</h3>
+                <p>از جدیدترین اخبار و مطالب ویژه ما مطلع شوید.</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="https://eitaa.com/" target="_blank" class="btn-white">
+                    عضویت در کانال
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">گلدوزی <span>نفیسه</span></h3>
+                    <p class="footer-description">
+                        آموزش هنر اصیل گلدوزی با جدیدترین متدهای آموزشی برای تمامی سطوح
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="اینستاگرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="تلگرام">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="آپارات">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="واتساپ">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">لینک‌های سریع</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">دوره‌های آموزشی</a></li>
+                        <li><a href="#">نمونه کارها</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">خدمات ما</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">آموزش گلدوزی</a></li>
+                        <li><a href="#">طراحی نقشه گلدوزی</a></li>
+                        <li><a href="#">فروش ابزار گلدوزی</a></li>
+                        <li><a href="#">مشاوره تخصصی</a></li>
+                        <li><a href="#">کارگاه‌های عملی</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">تماس با ما</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>قم، شهید صدوقی</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@nafise.ir</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        تمامی حقوق مادی و معنوی این سایت متعلق به گلدوزی نفیسه می‌باشد. © 1404
+                    </p>
+                    <p class="developer">
+                        توسعه یافته توسط 
+                        <span class="developer-name">YouseefStar</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
